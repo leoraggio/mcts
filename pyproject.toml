@@ -1,0 +1,27 @@
+[project]
+name = "mcts"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "catboost==1.2.5",
+    "jupyterlab>=4.2.5",
+    "kaggle>=1.6.17",
+    "lightgbm==4.2.0",
+    "matplotlib>=3.9.2",
+    "numpy==1.26.4",
+    "pandas==2.2.2",
+    "polars==1.5.0",
+    "scikit-learn==1.2.2",
+    "seaborn>=0.13.2",
+]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.6.4",
+]
